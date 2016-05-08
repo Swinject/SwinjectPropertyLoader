@@ -279,13 +279,13 @@
 		985904061CDB0AA700275E4A /* SwinjectPropertyLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectPropertyLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwinjectPropertyLoader.h; sourceTree = "<group>"; };
 		9859040B1CDB0AA700275E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		985904101CDB0AA700275E4A /* SwinjectPropertyLoader.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectPropertyLoader.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		985904101CDB0AA700275E4A /* SwinjectPropertyLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectPropertyLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardTests.swift; sourceTree = "<group>"; };
 		985904171CDB0AA700275E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98D562781CDB173500DECDC0 /* SwinjectPropertyLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectPropertyLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98D562811CDB173500DECDC0 /* SwinjectPropertyLoader.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectPropertyLoader.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D562811CDB173500DECDC0 /* SwinjectPropertyLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectPropertyLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D562941CDB19AB00DECDC0 /* SwinjectPropertyLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectPropertyLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98D5629D1CDB19AB00DECDC0 /* SwinjectPropertyLoader.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectPropertyLoader.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D5629D1CDB19AB00DECDC0 /* SwinjectPropertyLoaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectPropertyLoaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D562B21CDB1E8800DECDC0 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		98D562B51CDB1E8800DECDC0 /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
@@ -418,11 +418,11 @@
 			isa = PBXGroup;
 			children = (
 				985904061CDB0AA700275E4A /* SwinjectPropertyLoader.framework */,
-				985904101CDB0AA700275E4A /* SwinjectPropertyLoader.xctest */,
+				985904101CDB0AA700275E4A /* SwinjectPropertyLoaderTests.xctest */,
 				98D562781CDB173500DECDC0 /* SwinjectPropertyLoader.framework */,
-				98D562811CDB173500DECDC0 /* SwinjectPropertyLoader.xctest */,
+				98D562811CDB173500DECDC0 /* SwinjectPropertyLoaderTests.xctest */,
 				98D562941CDB19AB00DECDC0 /* SwinjectPropertyLoader.framework */,
-				98D5629D1CDB19AB00DECDC0 /* SwinjectPropertyLoader.xctest */,
+				98D5629D1CDB19AB00DECDC0 /* SwinjectPropertyLoaderTests.xctest */,
 				983DFF6D1CDF3FEE00D39731 /* SwinjectPropertyLoader.framework */,
 			);
 			name = Products;
@@ -645,7 +645,7 @@
 			);
 			name = "SwinjectPropertyLoader-iOSTests";
 			productName = SwinjectStoryboardTests;
-			productReference = 985904101CDB0AA700275E4A /* SwinjectPropertyLoader.xctest */;
+			productReference = 985904101CDB0AA700275E4A /* SwinjectPropertyLoaderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		98D562771CDB173500DECDC0 /* SwinjectPropertyLoader-OSX */ = {
@@ -684,7 +684,7 @@
 			);
 			name = "SwinjectPropertyLoader-OSXTests";
 			productName = SwinjectStoryboardTests;
-			productReference = 98D562811CDB173500DECDC0 /* SwinjectPropertyLoader.xctest */;
+			productReference = 98D562811CDB173500DECDC0 /* SwinjectPropertyLoaderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		98D562931CDB19AB00DECDC0 /* SwinjectPropertyLoader-tvOS */ = {
@@ -723,7 +723,7 @@
 			);
 			name = "SwinjectPropertyLoader-tvOSTests";
 			productName = SwinjectStoryboardTests;
-			productReference = 98D5629D1CDB19AB00DECDC0 /* SwinjectPropertyLoader.xctest */;
+			productReference = 98D5629D1CDB19AB00DECDC0 /* SwinjectPropertyLoaderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -1193,7 +1193,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
-				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Debug;
 		};
@@ -1205,7 +1204,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
-				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Release;
 		};
@@ -1215,7 +1213,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
-				PRODUCT_NAME = SwinjectPropertyLoader;
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
 			name = Debug;
 		};
@@ -1225,7 +1223,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
-				PRODUCT_NAME = SwinjectPropertyLoader;
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
 			name = Release;
 		};
@@ -1237,7 +1235,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
-				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Debug;
 		};
@@ -1249,7 +1246,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
-				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Release;
 		};
@@ -1259,7 +1255,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
-				PRODUCT_NAME = SwinjectPropertyLoader;
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
 			name = Debug;
 		};
@@ -1269,7 +1265,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
-				PRODUCT_NAME = SwinjectPropertyLoader;
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
 			name = Release;
 		};
@@ -1281,7 +1277,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
-				PRODUCT_NAME = SwinjectPropertyLoader;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -1294,7 +1289,6 @@
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
-				PRODUCT_NAME = SwinjectPropertyLoader;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
@@ -1305,7 +1299,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
-				PRODUCT_NAME = SwinjectPropertyLoader;
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
 			name = Debug;
 		};
@@ -1315,7 +1309,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
-				PRODUCT_NAME = SwinjectPropertyLoader;
+				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
 			};
 			name = Release;
 		};
