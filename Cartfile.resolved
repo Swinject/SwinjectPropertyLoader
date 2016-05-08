@@ -1,4 +1,4 @@
 github "Quick/Nimble" "v4.0.1"
 github "Quick/Quick" "v0.9.2"
-github "yoichitgy/Swinject" "c67bc1260f91f612197b81d59c386241ee7d1976"
+github "Swinject/Swinject" "e6b7b5288132928140c2e3b18e7fd5a542edccfd"
 github "jspahrsummers/xcconfigs" "ec5753493605deed7358dec5f9260f503d3ed650"
