@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "98D562931CDB19AB00DECDC0"
-               BuildableName = "SwinjectStoryboard.framework"
-               BlueprintName = "SwinjectStoryboard-tvOS"
-               ReferencedContainer = "container:SwinjectStoryboard.xcodeproj">
+               BuildableName = "SwinjectPropertyLoader.framework"
+               BlueprintName = "SwinjectPropertyLoader-tvOS"
+               ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "98D5629C1CDB19AB00DECDC0"
-               BuildableName = "SwinjectStoryboardTests.xctest"
-               BlueprintName = "SwinjectStoryboard-tvOSTests"
-               ReferencedContainer = "container:SwinjectStoryboard.xcodeproj">
+               BuildableName = "SwinjectPropertyLoader.xctest"
+               BlueprintName = "SwinjectPropertyLoader-tvOSTests"
+               ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "98D562931CDB19AB00DECDC0"
-            BuildableName = "SwinjectStoryboard.framework"
-            BlueprintName = "SwinjectStoryboard-tvOS"
-            ReferencedContainer = "container:SwinjectStoryboard.xcodeproj">
+            BuildableName = "SwinjectPropertyLoader.framework"
+            BlueprintName = "SwinjectPropertyLoader-tvOS"
+            ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "98D562931CDB19AB00DECDC0"
-            BuildableName = "SwinjectStoryboard.framework"
-            BlueprintName = "SwinjectStoryboard-tvOS"
-            ReferencedContainer = "container:SwinjectStoryboard.xcodeproj">
+            BuildableName = "SwinjectPropertyLoader.framework"
+            BlueprintName = "SwinjectPropertyLoader-tvOS"
+            ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "98D562931CDB19AB00DECDC0"
-            BuildableName = "SwinjectStoryboard.framework"
-            BlueprintName = "SwinjectStoryboard-tvOS"
-            ReferencedContainer = "container:SwinjectStoryboard.xcodeproj">
+            BuildableName = "SwinjectPropertyLoader.framework"
+            BlueprintName = "SwinjectPropertyLoader-tvOS"
+            ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

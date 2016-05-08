@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "985904051CDB0AA700275E4A"
-               BuildableName = "SwinjectStoryboard.framework"
-               BlueprintName = "SwinjectStoryboard-iOS"
-               ReferencedContainer = "container:SwinjectStoryboard.xcodeproj">
+               BlueprintIdentifier = "983DFF6C1CDF3FEE00D39731"
+               BuildableName = "SwinjectPropertyLoader.framework"
+               BlueprintName = "SwinjectPropertyLoader-watchOS"
+               ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9859040F1CDB0AA700275E4A"
-               BuildableName = "SwinjectStoryboardTests.xctest"
-               BlueprintName = "SwinjectStoryboard-iOSTests"
-               ReferencedContainer = "container:SwinjectStoryboard.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "985904051CDB0AA700275E4A"
-            BuildableName = "SwinjectStoryboard.framework"
-            BlueprintName = "SwinjectStoryboard-iOS"
-            ReferencedContainer = "container:SwinjectStoryboard.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "985904051CDB0AA700275E4A"
-            BuildableName = "SwinjectStoryboard.framework"
-            BlueprintName = "SwinjectStoryboard-iOS"
-            ReferencedContainer = "container:SwinjectStoryboard.xcodeproj">
+            BlueprintIdentifier = "983DFF6C1CDF3FEE00D39731"
+            BuildableName = "SwinjectPropertyLoader.framework"
+            BlueprintName = "SwinjectPropertyLoader-watchOS"
+            ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "985904051CDB0AA700275E4A"
-            BuildableName = "SwinjectStoryboard.framework"
-            BlueprintName = "SwinjectStoryboard-iOS"
-            ReferencedContainer = "container:SwinjectStoryboard.xcodeproj">
+            BlueprintIdentifier = "983DFF6C1CDF3FEE00D39731"
+            BuildableName = "SwinjectPropertyLoader.framework"
+            BlueprintName = "SwinjectPropertyLoader-watchOS"
+            ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

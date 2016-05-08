@@ -1,15 +1,15 @@
 //
-//  SwinjectStoryboardTests.swift
-//  SwinjectStoryboardTests
+//  SwinjectPropertyLoaderTests.swift
+//  SwinjectPropertyLoaderTests
 //
 //  Created by Yoichi Tagaya on 5/5/16.
 //  Copyright © 2016 Swinject Contributors. All rights reserved.
 //
 
 import XCTest
-@testable import SwinjectStoryboard
+@testable import SwinjectPropertyLoader
 
-class SwinjectStoryboardTests: XCTestCase {
+class SwinjectPropertyLoaderTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
