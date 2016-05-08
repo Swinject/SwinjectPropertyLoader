@@ -1,5 +1,5 @@
 //
-//  Container+PropertiesSpec.swift
+//  ResolverType+PropertiesSpec.swift
 //  SwinjectPropertyLoader
 //
 //  Created by Yoichi Tagaya on 5/8/16.
@@ -10,9 +10,15 @@ import Foundation
 import Quick
 import Nimble
 import Swinject
+import SwinjectPropertyLoader
 
-class Container_PropertiesSpec: QuickSpec {
+class ResolverType_PropertiesSpec: QuickSpec {
     override func spec() {
+        var container: Container!
+        beforeEach {
+            container = Container()
+        }
+        
         describe("JSON properties") {
             it("can load properties from a single loader") {
                 let loader = JsonPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "first")

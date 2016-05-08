@@ -9,6 +9,7 @@
 import Quick
 import Nimble
 import Swinject
+import SwinjectPropertyLoader
 
 
 class PlistPropertyLoaderSpec: QuickSpec {

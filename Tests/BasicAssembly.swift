@@ -15,4 +15,3 @@ class PropertyAsssembly: AssemblyType {
         }
     }
 }
-f

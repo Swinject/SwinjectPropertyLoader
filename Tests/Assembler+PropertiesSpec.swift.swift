@@ -10,6 +10,7 @@ import Foundation
 import Quick
 import Nimble
 import Swinject
+import SwinjectPropertyLoader
 
 class Assembler_PropertiesSpec: QuickSpec {
     override func spec() {
