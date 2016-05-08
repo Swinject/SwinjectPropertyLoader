@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "983DFF6C1CDF3FEE00D39731"
-               BuildableName = "SwinjectPropertyLoader-watchOS.framework"
+               BuildableName = "SwinjectPropertyLoader.framework"
                BlueprintName = "SwinjectPropertyLoader-watchOS"
                ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "983DFF6C1CDF3FEE00D39731"
-            BuildableName = "SwinjectPropertyLoader-watchOS.framework"
+            BuildableName = "SwinjectPropertyLoader.framework"
             BlueprintName = "SwinjectPropertyLoader-watchOS"
             ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "983DFF6C1CDF3FEE00D39731"
-            BuildableName = "SwinjectPropertyLoader-watchOS.framework"
+            BuildableName = "SwinjectPropertyLoader.framework"
             BlueprintName = "SwinjectPropertyLoader-watchOS"
             ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
          </BuildableReference>
