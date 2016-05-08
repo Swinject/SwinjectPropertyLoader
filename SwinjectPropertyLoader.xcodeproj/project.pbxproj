@@ -10,15 +10,15 @@
 		983DFE741CDB3A8000D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE641CDB38F000D39731 /* Swinject.framework */; };
 		983DFE751CDB3A8E00D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE681CDB38F000D39731 /* Swinject.framework */; };
 		983DFE7A1CDB3AA600D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE6E1CDB38F000D39731 /* Swinject.framework */; };
-		985315521CDB2CBF009E9FB7 /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		985315531CDB2CC0009E9FB7 /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		985315521CDB2CBF009E9FB7 /* SwinjectPropertyLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		985315531CDB2CC0009E9FB7 /* SwinjectPropertyLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985315581CDB2DDD009E9FB7 /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
 		985315621CDB2DDE009E9FB7 /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
-		9859040A1CDB0AA700275E4A /* SwinjectStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		985904111CDB0AA700275E4A /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */; };
+		9859040A1CDB0AA700275E4A /* SwinjectPropertyLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		985904111CDB0AA700275E4A /* SwinjectPropertyLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 985904061CDB0AA700275E4A /* SwinjectPropertyLoader.framework */; };
 		985904161CDB0AA700275E4A /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
-		98D562821CDB173500DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */; };
-		98D5629E1CDB19AB00DECDC0 /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */; };
+		98D562821CDB173500DECDC0 /* SwinjectPropertyLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562781CDB173500DECDC0 /* SwinjectPropertyLoader.framework */; };
+		98D5629E1CDB19AB00DECDC0 /* SwinjectPropertyLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D562941CDB19AB00DECDC0 /* SwinjectPropertyLoader.framework */; };
 		98D563A61CDB29FA00DECDC0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D563791CDB28C700DECDC0 /* Nimble.framework */; };
 		98D563A71CDB29FA00DECDC0 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D563971CDB28CE00DECDC0 /* Quick.framework */; };
 		98D563AC1CDB2A2100DECDC0 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98D5637D1CDB28C700DECDC0 /* Nimble.framework */; };
@@ -270,16 +270,16 @@
 
 /* Begin PBXFileReference section */
 		983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swinject.xcodeproj; path = Carthage/Checkouts/Swinject/Swinject.xcodeproj; sourceTree = "<group>"; };
-		985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		985904091CDB0AA700275E4A /* SwinjectStoryboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwinjectStoryboard.h; sourceTree = "<group>"; };
+		985904061CDB0AA700275E4A /* SwinjectPropertyLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectPropertyLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwinjectPropertyLoader.h; sourceTree = "<group>"; };
 		9859040B1CDB0AA700275E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		985904101CDB0AA700275E4A /* SwinjectStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		985904101CDB0AA700275E4A /* SwinjectPropertyLoader.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectPropertyLoader.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboardTests.swift; sourceTree = "<group>"; };
 		985904171CDB0AA700275E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98D562811CDB173500DECDC0 /* SwinjectStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		98D5629D1CDB19AB00DECDC0 /* SwinjectStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D562781CDB173500DECDC0 /* SwinjectPropertyLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectPropertyLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D562811CDB173500DECDC0 /* SwinjectPropertyLoader.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectPropertyLoader.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D562941CDB19AB00DECDC0 /* SwinjectPropertyLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectPropertyLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98D5629D1CDB19AB00DECDC0 /* SwinjectPropertyLoader.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwinjectPropertyLoader.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98D562B21CDB1E8800DECDC0 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		98D562B51CDB1E8800DECDC0 /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
@@ -320,7 +320,7 @@
 			files = (
 				98D563A61CDB29FA00DECDC0 /* Nimble.framework in Frameworks */,
 				98D563A71CDB29FA00DECDC0 /* Quick.framework in Frameworks */,
-				985904111CDB0AA700275E4A /* SwinjectStoryboard.framework in Frameworks */,
+				985904111CDB0AA700275E4A /* SwinjectPropertyLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +338,7 @@
 			files = (
 				98D563AC1CDB2A2100DECDC0 /* Nimble.framework in Frameworks */,
 				98D563AD1CDB2A2100DECDC0 /* Quick.framework in Frameworks */,
-				98D562821CDB173500DECDC0 /* SwinjectStoryboard.framework in Frameworks */,
+				98D562821CDB173500DECDC0 /* SwinjectPropertyLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +356,7 @@
 			files = (
 				98D563B21CDB2A3400DECDC0 /* Nimble.framework in Frameworks */,
 				98D563B31CDB2A3400DECDC0 /* Quick.framework in Frameworks */,
-				98D5629E1CDB19AB00DECDC0 /* SwinjectStoryboard.framework in Frameworks */,
+				98D5629E1CDB19AB00DECDC0 /* SwinjectPropertyLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,12 +393,12 @@
 		985904071CDB0AA700275E4A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */,
-				985904101CDB0AA700275E4A /* SwinjectStoryboardTests.xctest */,
-				98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */,
-				98D562811CDB173500DECDC0 /* SwinjectStoryboardTests.xctest */,
-				98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */,
-				98D5629D1CDB19AB00DECDC0 /* SwinjectStoryboardTests.xctest */,
+				985904061CDB0AA700275E4A /* SwinjectPropertyLoader.framework */,
+				985904101CDB0AA700275E4A /* SwinjectPropertyLoader.xctest */,
+				98D562781CDB173500DECDC0 /* SwinjectPropertyLoader.framework */,
+				98D562811CDB173500DECDC0 /* SwinjectPropertyLoader.xctest */,
+				98D562941CDB19AB00DECDC0 /* SwinjectPropertyLoader.framework */,
+				98D5629D1CDB19AB00DECDC0 /* SwinjectPropertyLoader.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -406,7 +406,7 @@
 		985904081CDB0AA700275E4A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				985904091CDB0AA700275E4A /* SwinjectStoryboard.h */,
+				985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */,
 				9859040B1CDB0AA700275E4A /* Info.plist */,
 			);
 			path = Sources;
@@ -534,7 +534,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9859040A1CDB0AA700275E4A /* SwinjectStoryboard.h in Headers */,
+				9859040A1CDB0AA700275E4A /* SwinjectPropertyLoader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +542,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				985315521CDB2CBF009E9FB7 /* SwinjectStoryboard.h in Headers */,
+				985315521CDB2CBF009E9FB7 /* SwinjectPropertyLoader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,16 +550,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				985315531CDB2CC0009E9FB7 /* SwinjectStoryboard.h in Headers */,
+				985315531CDB2CC0009E9FB7 /* SwinjectPropertyLoader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		985904051CDB0AA700275E4A /* SwinjectStoryboard-iOS */ = {
+		985904051CDB0AA700275E4A /* SwinjectPropertyLoader-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9859041A1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-iOS" */;
+			buildConfigurationList = 9859041A1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-iOS" */;
 			buildPhases = (
 				985904011CDB0AA700275E4A /* Sources */,
 				985904021CDB0AA700275E4A /* Frameworks */,
@@ -571,14 +571,14 @@
 			dependencies = (
 				983DFE731CDB3A7300D39731 /* PBXTargetDependency */,
 			);
-			name = "SwinjectStoryboard-iOS";
+			name = "SwinjectPropertyLoader-iOS";
 			productName = SwinjectStoryboard;
-			productReference = 985904061CDB0AA700275E4A /* SwinjectStoryboard.framework */;
+			productReference = 985904061CDB0AA700275E4A /* SwinjectPropertyLoader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9859040F1CDB0AA700275E4A /* SwinjectStoryboard-iOSTests */ = {
+		9859040F1CDB0AA700275E4A /* SwinjectPropertyLoader-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9859041D1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-iOSTests" */;
+			buildConfigurationList = 9859041D1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-iOSTests" */;
 			buildPhases = (
 				9859040C1CDB0AA700275E4A /* Sources */,
 				9859040D1CDB0AA700275E4A /* Frameworks */,
@@ -591,14 +591,14 @@
 				98D563A31CDB29D700DECDC0 /* PBXTargetDependency */,
 				985904131CDB0AA700275E4A /* PBXTargetDependency */,
 			);
-			name = "SwinjectStoryboard-iOSTests";
+			name = "SwinjectPropertyLoader-iOSTests";
 			productName = SwinjectStoryboardTests;
-			productReference = 985904101CDB0AA700275E4A /* SwinjectStoryboardTests.xctest */;
+			productReference = 985904101CDB0AA700275E4A /* SwinjectPropertyLoader.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		98D562771CDB173500DECDC0 /* SwinjectStoryboard-OSX */ = {
+		98D562771CDB173500DECDC0 /* SwinjectPropertyLoader-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98D562891CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-OSX" */;
+			buildConfigurationList = 98D562891CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-OSX" */;
 			buildPhases = (
 				98D562731CDB173500DECDC0 /* Sources */,
 				98D562741CDB173500DECDC0 /* Frameworks */,
@@ -610,14 +610,14 @@
 			dependencies = (
 				983DFE771CDB3A9700D39731 /* PBXTargetDependency */,
 			);
-			name = "SwinjectStoryboard-OSX";
+			name = "SwinjectPropertyLoader-OSX";
 			productName = SwinjectStoryboard;
-			productReference = 98D562781CDB173500DECDC0 /* SwinjectStoryboard.framework */;
+			productReference = 98D562781CDB173500DECDC0 /* SwinjectPropertyLoader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		98D562801CDB173500DECDC0 /* SwinjectStoryboard-OSXTests */ = {
+		98D562801CDB173500DECDC0 /* SwinjectPropertyLoader-OSXTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98D5628C1CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-OSXTests" */;
+			buildConfigurationList = 98D5628C1CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-OSXTests" */;
 			buildPhases = (
 				98D5627D1CDB173500DECDC0 /* Sources */,
 				98D5627E1CDB173500DECDC0 /* Frameworks */,
@@ -630,14 +630,14 @@
 				98D563AB1CDB2A0400DECDC0 /* PBXTargetDependency */,
 				98D562841CDB173500DECDC0 /* PBXTargetDependency */,
 			);
-			name = "SwinjectStoryboard-OSXTests";
+			name = "SwinjectPropertyLoader-OSXTests";
 			productName = SwinjectStoryboardTests;
-			productReference = 98D562811CDB173500DECDC0 /* SwinjectStoryboardTests.xctest */;
+			productReference = 98D562811CDB173500DECDC0 /* SwinjectPropertyLoader.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		98D562931CDB19AB00DECDC0 /* SwinjectStoryboard-tvOS */ = {
+		98D562931CDB19AB00DECDC0 /* SwinjectPropertyLoader-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98D562A91CDB19AB00DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-tvOS" */;
+			buildConfigurationList = 98D562A91CDB19AB00DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-tvOS" */;
 			buildPhases = (
 				98D5628F1CDB19AB00DECDC0 /* Sources */,
 				98D562901CDB19AB00DECDC0 /* Frameworks */,
@@ -649,14 +649,14 @@
 			dependencies = (
 				983DFE791CDB3AA000D39731 /* PBXTargetDependency */,
 			);
-			name = "SwinjectStoryboard-tvOS";
+			name = "SwinjectPropertyLoader-tvOS";
 			productName = SwinjectStoryboard;
-			productReference = 98D562941CDB19AB00DECDC0 /* SwinjectStoryboard.framework */;
+			productReference = 98D562941CDB19AB00DECDC0 /* SwinjectPropertyLoader.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		98D5629C1CDB19AB00DECDC0 /* SwinjectStoryboard-tvOSTests */ = {
+		98D5629C1CDB19AB00DECDC0 /* SwinjectPropertyLoader-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98D562AA1CDB19AB00DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-tvOSTests" */;
+			buildConfigurationList = 98D562AA1CDB19AB00DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-tvOSTests" */;
 			buildPhases = (
 				98D562991CDB19AB00DECDC0 /* Sources */,
 				98D5629A1CDB19AB00DECDC0 /* Frameworks */,
@@ -669,9 +669,9 @@
 				98D563B11CDB2A2A00DECDC0 /* PBXTargetDependency */,
 				98D562A01CDB19AB00DECDC0 /* PBXTargetDependency */,
 			);
-			name = "SwinjectStoryboard-tvOSTests";
+			name = "SwinjectPropertyLoader-tvOSTests";
 			productName = SwinjectStoryboardTests;
-			productReference = 98D5629D1CDB19AB00DECDC0 /* SwinjectStoryboardTests.xctest */;
+			productReference = 98D5629D1CDB19AB00DECDC0 /* SwinjectPropertyLoader.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -704,7 +704,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 985904001CDB0AA700275E4A /* Build configuration list for PBXProject "SwinjectStoryboard" */;
+			buildConfigurationList = 985904001CDB0AA700275E4A /* Build configuration list for PBXProject "SwinjectPropertyLoader" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -730,12 +730,12 @@
 			);
 			projectRoot = "";
 			targets = (
-				985904051CDB0AA700275E4A /* SwinjectStoryboard-iOS */,
-				9859040F1CDB0AA700275E4A /* SwinjectStoryboard-iOSTests */,
-				98D562771CDB173500DECDC0 /* SwinjectStoryboard-OSX */,
-				98D562801CDB173500DECDC0 /* SwinjectStoryboard-OSXTests */,
-				98D562931CDB19AB00DECDC0 /* SwinjectStoryboard-tvOS */,
-				98D5629C1CDB19AB00DECDC0 /* SwinjectStoryboard-tvOSTests */,
+				985904051CDB0AA700275E4A /* SwinjectPropertyLoader-iOS */,
+				9859040F1CDB0AA700275E4A /* SwinjectPropertyLoader-iOSTests */,
+				98D562771CDB173500DECDC0 /* SwinjectPropertyLoader-OSX */,
+				98D562801CDB173500DECDC0 /* SwinjectPropertyLoader-OSXTests */,
+				98D562931CDB19AB00DECDC0 /* SwinjectPropertyLoader-tvOS */,
+				98D5629C1CDB19AB00DECDC0 /* SwinjectPropertyLoader-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1013,17 +1013,17 @@
 		};
 		985904131CDB0AA700275E4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 985904051CDB0AA700275E4A /* SwinjectStoryboard-iOS */;
+			target = 985904051CDB0AA700275E4A /* SwinjectPropertyLoader-iOS */;
 			targetProxy = 985904121CDB0AA700275E4A /* PBXContainerItemProxy */;
 		};
 		98D562841CDB173500DECDC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 98D562771CDB173500DECDC0 /* SwinjectStoryboard-OSX */;
+			target = 98D562771CDB173500DECDC0 /* SwinjectPropertyLoader-OSX */;
 			targetProxy = 98D562831CDB173500DECDC0 /* PBXContainerItemProxy */;
 		};
 		98D562A01CDB19AB00DECDC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 98D562931CDB19AB00DECDC0 /* SwinjectStoryboard-tvOS */;
+			target = 98D562931CDB19AB00DECDC0 /* SwinjectPropertyLoader-tvOS */;
 			targetProxy = 98D5629F1CDB19AB00DECDC0 /* PBXContainerItemProxy */;
 		};
 		98D563A31CDB29D700DECDC0 /* PBXTargetDependency */ = {
@@ -1096,7 +1096,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Debug;
 		};
@@ -1107,7 +1108,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Release;
 		};
@@ -1116,8 +1118,8 @@
 			baseConfigurationReference = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
-				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Debug;
 		};
@@ -1126,8 +1128,8 @@
 			baseConfigurationReference = 98D562BD1CDB1E8800DECDC0 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
-				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Release;
 		};
@@ -1138,7 +1140,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Debug;
 		};
@@ -1149,7 +1152,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Release;
 		};
@@ -1158,8 +1162,8 @@
 			baseConfigurationReference = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
-				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Debug;
 		};
@@ -1168,8 +1172,8 @@
 			baseConfigurationReference = 98D562C21CDB1E8800DECDC0 /* Mac-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
-				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Release;
 		};
@@ -1180,7 +1184,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -1192,7 +1197,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				INFOPLIST_FILE = Sources/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
@@ -1202,8 +1208,8 @@
 			baseConfigurationReference = 98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
-				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Debug;
 		};
@@ -1212,15 +1218,15 @@
 			baseConfigurationReference = 98D562C91CDB1E8800DECDC0 /* tvOS-Application.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Tests/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectStoryboardTests";
-				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
+				PRODUCT_NAME = SwinjectPropertyLoader;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		985904001CDB0AA700275E4A /* Build configuration list for PBXProject "SwinjectStoryboard" */ = {
+		985904001CDB0AA700275E4A /* Build configuration list for PBXProject "SwinjectPropertyLoader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				985904181CDB0AA700275E4A /* Debug */,
@@ -1229,7 +1235,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9859041A1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-iOS" */ = {
+		9859041A1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9859041B1CDB0AA700275E4A /* Debug */,
@@ -1238,7 +1244,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9859041D1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-iOSTests" */ = {
+		9859041D1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9859041E1CDB0AA700275E4A /* Debug */,
@@ -1247,7 +1253,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98D562891CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-OSX" */ = {
+		98D562891CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98D5628A1CDB173500DECDC0 /* Debug */,
@@ -1256,7 +1262,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98D5628C1CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-OSXTests" */ = {
+		98D5628C1CDB173500DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-OSXTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98D5628D1CDB173500DECDC0 /* Debug */,
@@ -1265,7 +1271,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98D562A91CDB19AB00DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-tvOS" */ = {
+		98D562A91CDB19AB00DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98D562A51CDB19AB00DECDC0 /* Debug */,
@@ -1274,7 +1280,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98D562AA1CDB19AB00DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectStoryboard-tvOSTests" */ = {
+		98D562AA1CDB19AB00DECDC0 /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98D562A71CDB19AB00DECDC0 /* Debug */,
