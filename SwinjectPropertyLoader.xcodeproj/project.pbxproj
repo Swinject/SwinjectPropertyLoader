@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		983D00851CDF693E00D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE6C1CDB38F000D39731 /* Swinject.framework */; };
 		983DFE741CDB3A8000D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE641CDB38F000D39731 /* Swinject.framework */; };
 		983DFE751CDB3A8E00D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE681CDB38F000D39731 /* Swinject.framework */; };
 		983DFE7A1CDB3AA600D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE6E1CDB38F000D39731 /* Swinject.framework */; };
@@ -29,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		983D00761CDF693700D39731 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 985010C51BBE76D400A2CCFC;
+			remoteInfo = "Swinject-watchOS";
+		};
 		983DFE631CDB38F000D39731 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */;
@@ -316,6 +324,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983D00851CDF693E00D39731 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +612,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				983D00771CDF693700D39731 /* PBXTargetDependency */,
 			);
 			name = "SwinjectPropertyLoader-watchOS";
 			productName = SwinjectPropertyLoader;
@@ -1061,6 +1071,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		983D00771CDF693700D39731 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Swinject-watchOS";
+			targetProxy = 983D00761CDF693700D39731 /* PBXContainerItemProxy */;
+		};
 		983DFE731CDB3A7300D39731 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Swinject-iOS";
