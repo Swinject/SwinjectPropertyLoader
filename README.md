@@ -1,4 +1,4 @@
-SwinjectStoryboard
+SwinjectPropertyLoader
 ========
 
 ## License
