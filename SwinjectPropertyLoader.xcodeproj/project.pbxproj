@@ -10,6 +10,7 @@
 		983DFE741CDB3A8000D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE641CDB38F000D39731 /* Swinject.framework */; };
 		983DFE751CDB3A8E00D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE681CDB38F000D39731 /* Swinject.framework */; };
 		983DFE7A1CDB3AA600D39731 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 983DFE6E1CDB38F000D39731 /* Swinject.framework */; };
+		983DFF831CDF406F00D39731 /* SwinjectPropertyLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985315521CDB2CBF009E9FB7 /* SwinjectPropertyLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985315531CDB2CC0009E9FB7 /* SwinjectPropertyLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		985315581CDB2DDD009E9FB7 /* SwinjectStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985904151CDB0AA700275E4A /* SwinjectStoryboardTests.swift */; };
@@ -270,6 +271,7 @@
 
 /* Begin PBXFileReference section */
 		983DFE4E1CDB38F000D39731 /* Swinject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swinject.xcodeproj; path = Carthage/Checkouts/Swinject/Swinject.xcodeproj; sourceTree = "<group>"; };
+		983DFF6D1CDF3FEE00D39731 /* SwinjectPropertyLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectPropertyLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		985904061CDB0AA700275E4A /* SwinjectPropertyLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectPropertyLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwinjectPropertyLoader.h; sourceTree = "<group>"; };
 		9859040B1CDB0AA700275E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -306,6 +308,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		983DFF691CDF3FEE00D39731 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		985904021CDB0AA700275E4A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,6 +408,7 @@
 				98D562811CDB173500DECDC0 /* SwinjectPropertyLoader.xctest */,
 				98D562941CDB19AB00DECDC0 /* SwinjectPropertyLoader.framework */,
 				98D5629D1CDB19AB00DECDC0 /* SwinjectPropertyLoader.xctest */,
+				983DFF6D1CDF3FEE00D39731 /* SwinjectPropertyLoader.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -530,6 +540,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		983DFF6A1CDF3FEE00D39731 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983DFF831CDF406F00D39731 /* SwinjectPropertyLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		985904031CDB0AA700275E4A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -557,6 +575,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		983DFF6C1CDF3FEE00D39731 /* SwinjectPropertyLoader-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 983DFF811CDF3FEE00D39731 /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-watchOS" */;
+			buildPhases = (
+				983DFF681CDF3FEE00D39731 /* Sources */,
+				983DFF691CDF3FEE00D39731 /* Frameworks */,
+				983DFF6A1CDF3FEE00D39731 /* Headers */,
+				983DFF6B1CDF3FEE00D39731 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwinjectPropertyLoader-watchOS";
+			productName = SwinjectPropertyLoader;
+			productReference = 983DFF6D1CDF3FEE00D39731 /* SwinjectPropertyLoader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		985904051CDB0AA700275E4A /* SwinjectPropertyLoader-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9859041A1CDB0AA700275E4A /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-iOS" */;
@@ -684,6 +720,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Swinject Contributors";
 				TargetAttributes = {
+					983DFF6C1CDF3FEE00D39731 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					985904051CDB0AA700275E4A = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -736,6 +775,7 @@
 				98D562801CDB173500DECDC0 /* SwinjectPropertyLoader-OSXTests */,
 				98D562931CDB19AB00DECDC0 /* SwinjectPropertyLoader-tvOS */,
 				98D5629C1CDB19AB00DECDC0 /* SwinjectPropertyLoader-tvOSTests */,
+				983DFF6C1CDF3FEE00D39731 /* SwinjectPropertyLoader-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -898,6 +938,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		983DFF6B1CDF3FEE00D39731 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		985904041CDB0AA700275E4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -943,6 +990,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		983DFF681CDF3FEE00D39731 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		985904011CDB0AA700275E4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1054,6 +1108,106 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		983DFF721CDF3FEE00D39731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
+				PRODUCT_NAME = SwinjectPropertyLoader;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		983DFF731CDF3FEE00D39731 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
+				PRODUCT_NAME = SwinjectPropertyLoader;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		985904181CDB0AA700275E4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */;
@@ -1226,6 +1380,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		983DFF811CDF3FEE00D39731 /* Build configuration list for PBXNativeTarget "SwinjectPropertyLoader-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983DFF721CDF3FEE00D39731 /* Debug */,
+				983DFF731CDF3FEE00D39731 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		985904001CDB0AA700275E4A /* Build configuration list for PBXProject "SwinjectPropertyLoader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
