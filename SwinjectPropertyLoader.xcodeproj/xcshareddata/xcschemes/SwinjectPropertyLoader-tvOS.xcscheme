@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "98D5629C1CDB19AB00DECDC0"
-               BuildableName = "SwinjectPropertyLoader.xctest"
+               BuildableName = "SwinjectPropertyLoaderTests.xctest"
                BlueprintName = "SwinjectPropertyLoader-tvOSTests"
                ReferencedContainer = "container:SwinjectPropertyLoader.xcodeproj">
             </BuildableReference>
