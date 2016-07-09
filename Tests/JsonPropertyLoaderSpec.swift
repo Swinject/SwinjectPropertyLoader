@@ -15,13 +15,13 @@ import SwinjectPropertyLoader
 class JsonPropertyLoaderSpec: QuickSpec {
     override func spec() {
         it("can handle missing resource") {
-            let loader = JsonPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "noexist")
+            let loader = JsonPropertyLoader(bundle: Bundle(for: self.dynamicType.self), name: "noexist")
             expect {
                 try loader.load()
             }.to(throwError(errorType: PropertyLoaderError.self))
         }
         it("can handle invalid resource") {
-            let loader = JsonPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "invalid")
+            let loader = JsonPropertyLoader(bundle: Bundle(for: self.dynamicType.self), name: "invalid")
             expect {
                 try loader.load()
             }.to(throwError(errorType: PropertyLoaderError.self))

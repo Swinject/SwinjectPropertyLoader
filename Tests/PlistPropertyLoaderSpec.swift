@@ -15,7 +15,7 @@ import SwinjectPropertyLoader
 class PlistPropertyLoaderSpec: QuickSpec {
     override func spec() {
         it("can handle missing resource") {
-            let loader = PlistPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "noexist")
+            let loader = PlistPropertyLoader(bundle: Bundle(for: self.dynamicType.self), name: "noexist")
             expect {
                 try loader.load()
             }.to(throwError(errorType: PropertyLoaderError.self))
