@@ -21,7 +21,7 @@ class ResolverType_PropertiesSpec: QuickSpec {
         
         describe("JSON properties") {
             it("can load properties from a single loader") {
-                let loader = JsonPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "first")
+                let loader = JsonPropertyLoader(bundle: Bundle(for: self.dynamicType.self), name: "first")
                 try! container.applyPropertyLoader(loader)
                 
                 container.register(Properties.self) { r in
@@ -93,8 +93,8 @@ class ResolverType_PropertiesSpec: QuickSpec {
             }
             
             it("can load properties from multiple loader") {
-                let loader = JsonPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "first")
-                let loader2 = JsonPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "second")
+                let loader = JsonPropertyLoader(bundle: Bundle(for: self.dynamicType.self), name: "first")
+                let loader2 = JsonPropertyLoader(bundle: Bundle(for: self.dynamicType.self), name: "second")
                 try! container.applyPropertyLoader(loader)
                 try! container.applyPropertyLoader(loader2)
                 
@@ -115,7 +115,7 @@ class ResolverType_PropertiesSpec: QuickSpec {
         
         describe("Plist properties") {
             it("can load properties from a single loader") {
-                let loader = PlistPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "first")
+                let loader = PlistPropertyLoader(bundle: Bundle(for: self.dynamicType.self), name: "first")
                 try! container.applyPropertyLoader(loader)
                 
                 container.register(Properties.self) { r in
@@ -187,8 +187,8 @@ class ResolverType_PropertiesSpec: QuickSpec {
             }
             
             it("can load properties from multiple loader") {
-                let loader = PlistPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "first")
-                let loader2 = PlistPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "second")
+                let loader = PlistPropertyLoader(bundle: Bundle(for: self.dynamicType.self), name: "first")
+                let loader2 = PlistPropertyLoader(bundle: Bundle(for: self.dynamicType.self), name: "second")
                 try! container.applyPropertyLoader(loader)
                 try! container.applyPropertyLoader(loader2)
                 
