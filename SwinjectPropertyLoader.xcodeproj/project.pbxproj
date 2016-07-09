@@ -875,6 +875,7 @@
 					};
 					98D5629C1CDB19AB00DECDC0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1342,7 +1343,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1362,7 +1362,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98D562B61CDB1E8800DECDC0 /* Release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
