@@ -29,11 +29,11 @@ public protocol PropertyLoaderType {
 /// - Parameter ofType: the type of resource to load (e.g. json)
 ///
 /// - Returns: the contents of the resource as a string or nil if it does not exist
-func loadStringFromBundle(bundle: NSBundle, withName name: String, ofType type: String) throws -> String {
-    if let resourcePath = bundle.pathForResource(name, ofType: type) {
+func loadStringFromBundle(_ bundle: Bundle, withName name: String, ofType type: String) throws -> String {
+    if let resourcePath = bundle.path(forResource: name, ofType: type) {
         return try String(contentsOfFile: resourcePath)
     }
-    throw PropertyLoaderError.MissingResource(bundle: bundle, name: name)
+    throw PropertyLoaderError.missingResource(bundle: bundle, name: name)
 }
 
 /// Helper function to load the contes of a bundle resource into data. If the contents do not exist
@@ -45,12 +45,12 @@ func loadStringFromBundle(bundle: NSBundle, withName name: String, ofType type: 
 /// - Parameter ofType: the type of resource to load (e.g. json)
 ///
 /// - Returns: the contents of the resource as a data or nil if it does not exist
-func loadDataFromBundle(bundle: NSBundle, withName name: String, ofType type: String) throws -> NSData {
-    if let resourcePath = bundle.pathForResource(name, ofType: type) {
-        if let data = NSData(contentsOfFile: resourcePath) {
+func loadDataFromBundle(_ bundle: Bundle, withName name: String, ofType type: String) throws -> Data {
+    if let resourcePath = bundle.path(forResource: name, ofType: type) {
+        if let data = try? Data(contentsOf: URL(fileURLWithPath: resourcePath)) {
             return data
         }
-        throw PropertyLoaderError.InvalidResourceDataFormat(bundle: bundle, name: name)
+        throw PropertyLoaderError.invalidResourceDataFormat(bundle: bundle, name: name)
     }
-    throw PropertyLoaderError.MissingResource(bundle: bundle, name: name)
+    throw PropertyLoaderError.missingResource(bundle: bundle, name: name)
 }

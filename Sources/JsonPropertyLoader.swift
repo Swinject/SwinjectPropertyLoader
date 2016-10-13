@@ -13,10 +13,10 @@ import Foundation
 final public class JsonPropertyLoader {
     
     /// the bundle where the resource exists (defualts to mainBundle)
-    private let bundle: NSBundle
+    fileprivate let bundle: Bundle
     
     /// the name of the JSON resource. For example, if your resource is "properties.json" then this value will be set to "properties"
-    private let name: String
+    fileprivate let name: String
     
     ///
     /// Will create a JSON property loader
@@ -25,7 +25,7 @@ final public class JsonPropertyLoader {
     /// - parameter name:   the name of the JSON resource. For example, if your resource is "properties.json" 
     ///                     then this value will be set to "properties"
     ///
-    public init(bundle: NSBundle? = .mainBundle(), name: String) {
+    public init(bundle: Bundle? = Bundle.main, name: String) {
         self.bundle = bundle!
         self.name = name
     }
@@ -40,11 +40,11 @@ final public class JsonPropertyLoader {
     /// - Parameter str: the string to strip of comments
     ///
     /// - Returns: the json string stripper of comments
-    private func stringWithoutComments(str: String) -> String {
+    fileprivate func stringWithoutComments(_ str: String) -> String {
         let pattern = "(([\"'])(?:\\\\\\2|.)*?\\2)|(\\/\\/[^\\n\\r]*(?:[\\n\\r]+|$)|(\\/\\*(?:(?!\\*\\/).|[\\n\\r])*\\*\\/))"
-        let expression = try? NSRegularExpression(pattern: pattern, options: .AnchorsMatchLines)
+        let expression = try? NSRegularExpression(pattern: pattern, options: .anchorsMatchLines)
         
-        let matches = expression!.matchesInString(str, options: NSMatchingOptions(rawValue: 0),
+        let matches = expression!.matches(in: str, options: NSRegularExpression.MatchingOptions(rawValue: 0),
             range: NSRange(location: 0, length: str.characters.count))
         
         guard !matches.isEmpty else {
@@ -53,10 +53,10 @@ final public class JsonPropertyLoader {
         
         let ret = NSMutableString(string: str)
         
-        for match in matches.reverse() {
-            let character = String(str[str.startIndex.advancedBy(match.range.location)])
+        for match in matches.reversed() {
+            let character = String(str[str.characters.index(str.startIndex, offsetBy: match.range.location)])
             if character != "\'" && character != "\"" {
-                ret.replaceCharactersInRange(match.range, withString: "")
+                ret.replaceCharacters(in: match.range, with: "")
             }
         }
         return ret as String
@@ -68,11 +68,11 @@ extension JsonPropertyLoader: PropertyLoaderType {
     public func load() throws -> [String : AnyObject] {
         let contents = try loadStringFromBundle(bundle, withName: name, ofType: "json")
         let jsonWithoutComments = stringWithoutComments(contents)
-        let data = jsonWithoutComments.dataUsingEncoding(NSUTF8StringEncoding)
+        let data = jsonWithoutComments.data(using: String.Encoding.utf8)
         
-        let json = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(rawValue: 0))
+        let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions(rawValue: 0))
         guard let props = json as? [String:AnyObject] else {
-            throw PropertyLoaderError.InvalidJSONFormat(bundle: bundle, name: name)
+            throw PropertyLoaderError.invalidJSONFormat(bundle: bundle, name: name)
         }
         return props
         

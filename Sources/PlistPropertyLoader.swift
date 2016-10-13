@@ -13,10 +13,10 @@ import Foundation
 final public class PlistPropertyLoader {
     
     /// the bundle where the resource exists (defualts to mainBundle)
-    private let bundle: NSBundle
+    fileprivate let bundle: Bundle
     
     /// the name of the JSON resource. For example, if your resource is "properties.json" then this value will be set to "properties"
-    private let name: String
+    fileprivate let name: String
     
     ///
     /// Will create a plist property loader
@@ -25,7 +25,7 @@ final public class PlistPropertyLoader {
     /// - parameter name:   the name of the JSON resource. For example, if your resource is "properties.plist"
     ///                     then this value will be set to "properties"
     ///
-    public init(bundle: NSBundle? = .mainBundle(), name: String) {
+    public init(bundle: Bundle? = Bundle.main, name: String) {
         self.bundle = bundle!
         self.name = name
     }
@@ -35,9 +35,9 @@ final public class PlistPropertyLoader {
 extension PlistPropertyLoader: PropertyLoaderType {
     public func load() throws -> [String:AnyObject] {
         let data = try loadDataFromBundle(bundle, withName: name, ofType: "plist")
-        let plist = try NSPropertyListSerialization.propertyListWithData(data, options: .Immutable, format: nil)
+        let plist = try PropertyListSerialization.propertyList(from: data, options: PropertyListSerialization.MutabilityOptions(), format: nil)
         guard let props = plist as? [String:AnyObject] else {
-            throw PropertyLoaderError.InvalidPlistFormat(bundle: bundle, name: name)
+            throw PropertyLoaderError.invalidPlistFormat(bundle: bundle, name: name)
         }
         return props
     }

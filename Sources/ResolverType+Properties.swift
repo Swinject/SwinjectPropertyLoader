@@ -9,26 +9,26 @@
 import Swinject
 
 private struct AssociatedKeys {
-    private static var properties: UInt8 = 0
+    fileprivate static var properties: UInt8 = 0
 }
 
 extension ResolverType {
-    private var properties: [String: AnyObject] {
+    fileprivate var properties: [String: AnyObject] {
         get {
-            guard let obj = self as? AnyObject else {
-                fatalError("Property feature is not supported unless self is AnyObject.")
-            }
+//            guard let obj = self as? AnyObject else {
+//                fatalError("Property feature is not supported unless self is AnyObject.")
+//            }
             
-            return objc_getAssociatedObject(obj, &AssociatedKeys.properties) as? [String: AnyObject] ?? [:]
+            return objc_getAssociatedObject(self, &AssociatedKeys.properties) as? [String: AnyObject] ?? [:]
         }
     }
     
-    private func setProperties(newProperties: [String: AnyObject]) {
-        guard let obj = self as? AnyObject else {
-            fatalError("Property feature is not supported unless self is AnyObject.")
-        }
+    fileprivate func setProperties(_ newProperties: [String: AnyObject]) {
+//        guard let obj = self as? AnyObject else {
+//            fatalError("Property feature is not supported unless self is AnyObject.")
+//        }
         
-        objc_setAssociatedObject(obj, &AssociatedKeys.properties, newProperties, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+        objc_setAssociatedObject(self, &AssociatedKeys.properties, newProperties, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
     }
 
     ///
@@ -40,7 +40,7 @@ extension ResolverType {
     ///
     /// - parameter loader: the loader to load properties into the container
     ///
-    public func applyPropertyLoader(loader: PropertyLoaderType) throws {
+    public func applyPropertyLoader(_ loader: PropertyLoaderType) throws {
         let loadedProperties = try loader.load()
         var properties = self.properties
         for (key, value) in loadedProperties {
@@ -58,7 +58,7 @@ extension ResolverType {
     /// - Parameter type: The type of the property
     ///
     /// - Returns: The value for the property name
-    public func property<Property>(name: String) -> Property? {
+    public func property<Property>(_ name: String) -> Property? {
         return properties[name] as? Property
     }
 }
