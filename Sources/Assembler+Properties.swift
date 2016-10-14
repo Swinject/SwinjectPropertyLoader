@@ -42,7 +42,7 @@ extension Assembler {
     ///
     /// - throws: PropertyLoaderError
     ///
-    public func applyPropertyLoader(propertyLoader: PropertyLoaderType) throws {
+    public func applyPropertyLoader(_ propertyLoader: PropertyLoaderType) throws {
         try self.resolver.applyPropertyLoader(propertyLoader)
     }
 }
