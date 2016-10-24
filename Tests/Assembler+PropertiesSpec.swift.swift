@@ -19,7 +19,7 @@ class Assembler_PropertiesSpec: QuickSpec {
                 let assembler = try! Assembler(assemblies: [
                     PropertyAsssembly()
                     ], propertyLoaders: [
-                        PlistPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "first")
+                        PlistPropertyLoader(bundle: Bundle(for: type(of: self).self), name: "first")
                     ])
                 
                 let cat = assembler.resolver.resolve(AnimalType.self)
@@ -32,7 +32,7 @@ class Assembler_PropertiesSpec: QuickSpec {
                     try Assembler(assemblies: [
                         PropertyAsssembly()
                         ], propertyLoaders: [
-                            PlistPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "noexist")
+                            PlistPropertyLoader(bundle: Bundle(for: type(of: self).self), name: "noexist")
                         ])
                     }.to(throwError(errorType: PropertyLoaderError.self))
             }
@@ -42,10 +42,10 @@ class Assembler_PropertiesSpec: QuickSpec {
             it("can create an empty assembler and build it") {
                 let assembler = Assembler()
                 
-                let loader = PlistPropertyLoader(bundle: NSBundle(forClass: self.dynamicType.self), name: "first")
+                let loader = PlistPropertyLoader(bundle: Bundle(for: type(of: self).self), name: "first")
                 try! assembler.applyPropertyLoader(loader)
                 
-                assembler.applyAssembly(PropertyAsssembly())
+                assembler.apply(assembly: PropertyAsssembly())
                 
                 let cat = assembler.resolver.resolve(AnimalType.self)
                 expect(cat).toNot(beNil())

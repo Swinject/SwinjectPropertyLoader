@@ -643,10 +643,10 @@
 		98D563701CDB28C700DECDC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98D563791CDB28C700DECDC0 /* Nimble.framework */,
-				98D5637B1CDB28C700DECDC0 /* NimbleTests.xctest */,
 				98D5637D1CDB28C700DECDC0 /* Nimble.framework */,
 				98D5637F1CDB28C700DECDC0 /* NimbleTests.xctest */,
+				98D563791CDB28C700DECDC0 /* Nimble.framework */,
+				98D5637B1CDB28C700DECDC0 /* NimbleTests.xctest */,
 				98D563811CDB28C700DECDC0 /* Nimble.framework */,
 				98D563831CDB28C700DECDC0 /* NimbleTests.xctest */,
 			);
@@ -657,8 +657,8 @@
 			isa = PBXGroup;
 			children = (
 				98D563911CDB28CE00DECDC0 /* Quick.framework */,
-				98D563931CDB28CE00DECDC0 /* Quick-OSXTests.xctest */,
-				98D563951CDB28CE00DECDC0 /* QuickFocused-OSXTests.xctest */,
+				98D563931CDB28CE00DECDC0 /* Quick-macOSTests.xctest */,
+				98D563951CDB28CE00DECDC0 /* QuickFocused-macOSTests.xctest */,
 				98D563971CDB28CE00DECDC0 /* Quick.framework */,
 				98D563991CDB28CE00DECDC0 /* Quick-iOSTests.xctest */,
 				98D5639B1CDB28CE00DECDC0 /* QuickFocused-iOSTests.xctest */,
@@ -858,9 +858,11 @@
 					};
 					985904051CDB0AA700275E4A = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					9859040F1CDB0AA700275E4A = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					98D562771CDB173500DECDC0 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -873,6 +875,7 @@
 					};
 					98D5629C1CDB19AB00DECDC0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -1012,17 +1015,17 @@
 			remoteRef = 98D563901CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98D563931CDB28CE00DECDC0 /* Quick-OSXTests.xctest */ = {
+		98D563931CDB28CE00DECDC0 /* Quick-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "Quick-OSXTests.xctest";
+			path = "Quick-macOSTests.xctest";
 			remoteRef = 98D563921CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98D563951CDB28CE00DECDC0 /* QuickFocused-OSXTests.xctest */ = {
+		98D563951CDB28CE00DECDC0 /* QuickFocused-macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "QuickFocused-OSXTests.xctest";
+			path = "QuickFocused-macOSTests.xctest";
 			remoteRef = 98D563941CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1315,6 +1318,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
@@ -1330,6 +1334,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
@@ -1338,13 +1343,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98D562B41CDB1E8800DECDC0 /* Debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1357,12 +1362,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 98D562B61CDB1E8800DECDC0 /* Release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				GCC_NO_COMMON_BLOCKS = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1407,6 +1412,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1417,6 +1423,7 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1432,6 +1439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1446,6 +1454,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1481,6 +1490,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -1496,6 +1506,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
