@@ -15,19 +15,11 @@ private struct AssociatedKeys {
 extension ResolverType {
     fileprivate var properties: [String: AnyObject] {
         get {
-//            guard let obj = self as? AnyObject else {
-//                fatalError("Property feature is not supported unless self is AnyObject.")
-//            }
-            
             return objc_getAssociatedObject(self, &AssociatedKeys.properties) as? [String: AnyObject] ?? [:]
         }
     }
     
     fileprivate func setProperties(_ newProperties: [String: AnyObject]) {
-//        guard let obj = self as? AnyObject else {
-//            fatalError("Property feature is not supported unless self is AnyObject.")
-//        }
-        
         objc_setAssociatedObject(self, &AssociatedKeys.properties, newProperties, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
     }
 
