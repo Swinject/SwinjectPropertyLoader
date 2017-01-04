@@ -17,7 +17,7 @@ public protocol PropertyLoaderType {
     /// the key-value pairs of the properties
     ///
     /// - returns: the key-value pair properties
-    func load() throws -> [String:AnyObject]
+    func load() throws -> [String: Any]
 }
 
 /// Helper function to load the contents of a bundle resource into a string. If the contents do not exist we will

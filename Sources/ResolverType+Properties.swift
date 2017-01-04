@@ -13,13 +13,13 @@ private struct AssociatedKeys {
 }
 
 extension Resolver {
-    fileprivate var properties: [String: AnyObject] {
+    fileprivate var properties: [String: Any] {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.properties) as? [String: AnyObject] ?? [:]
+            return objc_getAssociatedObject(self, &AssociatedKeys.properties) as? [String: Any] ?? [:]
         }
     }
     
-    fileprivate func setProperties(_ newProperties: [String: AnyObject]) {
+    fileprivate func setProperties(_ newProperties: [String: Any]) {
         objc_setAssociatedObject(self, &AssociatedKeys.properties, newProperties, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
     }
 
