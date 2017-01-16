@@ -8,7 +8,7 @@
 
 import Swinject
 
-class PropertyAsssembly: AssemblyType {
+class PropertyAsssembly: Assembly {
     func assemble(container: Container) {
         container.register(AnimalType.self) { r in
             return Cat(name: r.property("test.string")!)
