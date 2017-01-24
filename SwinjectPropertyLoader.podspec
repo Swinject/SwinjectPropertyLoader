@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "SwinjectPropertyLoader"
-  s.version          = "2.0.0"
+  s.version          = "1.0.0"
   s.summary          = "Swinject extension to load property values from resources"
   s.description      = <<-DESC
                        SwinjectPropertyLoader is an extension of Swinject to load property values from resources that are bundled with your application/framework.
