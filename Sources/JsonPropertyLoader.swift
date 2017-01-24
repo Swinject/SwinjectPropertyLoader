@@ -70,7 +70,7 @@ extension JsonPropertyLoader: PropertyLoaderType {
         let jsonWithoutComments = stringWithoutComments(contents)
         let data = jsonWithoutComments.data(using: String.Encoding.utf8)
         
-        let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions(rawValue: 0))
+        let json = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions(rawValue: 0))
         guard let props = json as? [String:AnyObject] else {
             throw PropertyLoaderError.invalidJSONFormat(bundle: bundle, name: name)
         }

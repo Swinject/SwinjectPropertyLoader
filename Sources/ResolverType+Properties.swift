@@ -12,7 +12,7 @@ private struct AssociatedKeys {
     fileprivate static var properties: UInt8 = 0
 }
 
-extension ResolverType {
+extension Resolver {
     fileprivate var properties: [String: AnyObject] {
         get {
             return objc_getAssociatedObject(self, &AssociatedKeys.properties) as? [String: AnyObject] ?? [:]

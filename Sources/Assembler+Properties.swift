@@ -15,7 +15,7 @@ extension Assembler {
     /// - parameter propertyLoaders:    a list of property loaders to apply to the container
     /// - parameter container:          the baseline container
     ///
-    public convenience init(assemblies: [AssemblyType], propertyLoaders: [PropertyLoaderType], container: Container? = Container()) throws {
+    public convenience init(assemblies: [Assembly], propertyLoaders: [PropertyLoaderType], container: Container? = Container()) throws {
         try self.init(assemblies: assemblies, container: container)
         for propertyLoader in propertyLoaders {
             try container!.applyPropertyLoader(propertyLoader)
@@ -28,7 +28,7 @@ extension Assembler {
     /// - parameter parentAssembler:    the baseline assembler
     /// - parameter propertyLoaders:    a list of property loaders to apply to the container
     ///
-    public convenience init(assemblies: [AssemblyType], parentAssembler: Assembler?, propertyLoaders: [PropertyLoaderType]) throws {
+    public convenience init(assemblies: [Assembly], parentAssembler: Assembler?, propertyLoaders: [PropertyLoaderType]) throws {
         try self.init(assemblies: assemblies, parentAssembler: parentAssembler)
         for propertyLoader in propertyLoaders {
             try self.resolver.applyPropertyLoader(propertyLoader)
