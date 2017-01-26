@@ -1,5 +1,5 @@
 //
-//  ResolverType+Properties.swift
+//  Resolver+Properties.swift
 //  Swinject
 //
 //  Created by Yoichi Tagaya on 5/4/16.
