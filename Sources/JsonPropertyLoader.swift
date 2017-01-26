@@ -44,8 +44,7 @@ final public class JsonPropertyLoader {
         let pattern = "(([\"'])(?:\\\\\\2|.)*?\\2)|(\\/\\/[^\\n\\r]*(?:[\\n\\r]+|$)|(\\/\\*(?:(?!\\*\\/).|[\\n\\r])*\\*\\/))"
         let expression = try? NSRegularExpression(pattern: pattern, options: .anchorsMatchLines)
         
-        let matches = expression!.matches(in: str, options: NSRegularExpression.MatchingOptions(rawValue: 0),
-            range: NSRange(location: 0, length: str.characters.count))
+        let matches = expression!.matches(in: str, options: [], range: NSRange(location: 0, length: str.characters.count))
         
         guard !matches.isEmpty else {
             return str
@@ -70,7 +69,7 @@ extension JsonPropertyLoader: PropertyLoaderType {
         let jsonWithoutComments = stringWithoutComments(contents)
         let data = jsonWithoutComments.data(using: String.Encoding.utf8)
         
-        let json = try? JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions(rawValue: 0))
+        let json = try? JSONSerialization.jsonObject(with: data!, options: [])
         guard let props = json as? [String: Any] else {
             throw PropertyLoaderError.invalidJSONFormat(bundle: bundle, name: name)
         }
