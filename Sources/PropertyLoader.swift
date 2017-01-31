@@ -1,5 +1,5 @@
 //
-//  PropertyLoaderType.swift
+//  PropertyLoader.swift
 //  Swinject
 //
 //  Created by mike.owens on 12/6/15.
@@ -9,9 +9,9 @@
 import Foundation
 
 
-/// The PropertyLoaderType protocol defines an interface for loading properties from the applications
+/// The PropertyLoader protocol defines an interface for loading properties from the applications
 /// bundle that can
-public protocol PropertyLoaderType {
+public protocol PropertyLoader {
     
     /// Will load the properties from the application bundle and return the properties dictionary containing
     /// the key-value pairs of the properties

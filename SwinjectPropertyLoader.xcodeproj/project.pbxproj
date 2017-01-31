@@ -23,10 +23,10 @@
 		983D000D1CDF63A000D39731 /* PropertyLoaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFE1CDF63A000D39731 /* PropertyLoaderError.swift */; };
 		983D000E1CDF63A000D39731 /* PropertyLoaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFE1CDF63A000D39731 /* PropertyLoaderError.swift */; };
 		983D000F1CDF63A000D39731 /* PropertyLoaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFE1CDF63A000D39731 /* PropertyLoaderError.swift */; };
-		983D00101CDF63A000D39731 /* PropertyLoaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFF1CDF63A000D39731 /* PropertyLoaderType.swift */; };
-		983D00111CDF63A000D39731 /* PropertyLoaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFF1CDF63A000D39731 /* PropertyLoaderType.swift */; };
-		983D00121CDF63A000D39731 /* PropertyLoaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFF1CDF63A000D39731 /* PropertyLoaderType.swift */; };
-		983D00131CDF63A000D39731 /* PropertyLoaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFF1CDF63A000D39731 /* PropertyLoaderType.swift */; };
+		983D00101CDF63A000D39731 /* PropertyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFF1CDF63A000D39731 /* PropertyLoader.swift */; };
+		983D00111CDF63A000D39731 /* PropertyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFF1CDF63A000D39731 /* PropertyLoader.swift */; };
+		983D00121CDF63A000D39731 /* PropertyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFF1CDF63A000D39731 /* PropertyLoader.swift */; };
+		983D00131CDF63A000D39731 /* PropertyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFF1CDF63A000D39731 /* PropertyLoader.swift */; };
 		983D00181CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00141CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift */; };
 		983D00191CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00141CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift */; };
 		983D001A1CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00141CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift */; };
@@ -379,7 +379,7 @@
 		983DFFFC1CDF63A000D39731 /* JsonPropertyLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonPropertyLoader.swift; sourceTree = "<group>"; };
 		983DFFFD1CDF63A000D39731 /* PlistPropertyLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistPropertyLoader.swift; sourceTree = "<group>"; };
 		983DFFFE1CDF63A000D39731 /* PropertyLoaderError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyLoaderError.swift; sourceTree = "<group>"; };
-		983DFFFF1CDF63A000D39731 /* PropertyLoaderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyLoaderType.swift; sourceTree = "<group>"; };
+		983DFFFF1CDF63A000D39731 /* PropertyLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyLoader.swift; sourceTree = "<group>"; };
 		985904061CDB0AA700275E4A /* SwinjectPropertyLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwinjectPropertyLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwinjectPropertyLoader.h; sourceTree = "<group>"; };
 		9859040B1CDB0AA700275E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -562,7 +562,7 @@
 				983DFFFC1CDF63A000D39731 /* JsonPropertyLoader.swift */,
 				983DFFFD1CDF63A000D39731 /* PlistPropertyLoader.swift */,
 				983DFFFE1CDF63A000D39731 /* PropertyLoaderError.swift */,
-				983DFFFF1CDF63A000D39731 /* PropertyLoaderType.swift */,
+				983DFFFF1CDF63A000D39731 /* PropertyLoader.swift */,
 				985904091CDB0AA700275E4A /* SwinjectPropertyLoader.h */,
 				9859040B1CDB0AA700275E4A /* Info.plist */,
 			);
@@ -1195,7 +1195,7 @@
 				983D00071CDF63A000D39731 /* JsonPropertyLoader.swift in Sources */,
 				983D000F1CDF63A000D39731 /* PropertyLoaderError.swift in Sources */,
 				983D000B1CDF63A000D39731 /* PlistPropertyLoader.swift in Sources */,
-				983D00131CDF63A000D39731 /* PropertyLoaderType.swift in Sources */,
+				983D00131CDF63A000D39731 /* PropertyLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1208,7 +1208,7 @@
 				983D00041CDF63A000D39731 /* JsonPropertyLoader.swift in Sources */,
 				983D000C1CDF63A000D39731 /* PropertyLoaderError.swift in Sources */,
 				983D00081CDF63A000D39731 /* PlistPropertyLoader.swift in Sources */,
-				983D00101CDF63A000D39731 /* PropertyLoaderType.swift in Sources */,
+				983D00101CDF63A000D39731 /* PropertyLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1235,7 +1235,7 @@
 				983D00051CDF63A000D39731 /* JsonPropertyLoader.swift in Sources */,
 				983D000D1CDF63A000D39731 /* PropertyLoaderError.swift in Sources */,
 				983D00091CDF63A000D39731 /* PlistPropertyLoader.swift in Sources */,
-				983D00111CDF63A000D39731 /* PropertyLoaderType.swift in Sources */,
+				983D00111CDF63A000D39731 /* PropertyLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1262,7 +1262,7 @@
 				983D00061CDF63A000D39731 /* JsonPropertyLoader.swift in Sources */,
 				983D000E1CDF63A000D39731 /* PropertyLoaderError.swift in Sources */,
 				983D000A1CDF63A000D39731 /* PlistPropertyLoader.swift in Sources */,
-				983D00121CDF63A000D39731 /* PropertyLoaderType.swift in Sources */,
+				983D00121CDF63A000D39731 /* PropertyLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

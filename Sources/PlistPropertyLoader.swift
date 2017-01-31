@@ -32,7 +32,7 @@ final public class PlistPropertyLoader {
 }
 
 // MARK: - PropertyLoadable
-extension PlistPropertyLoader: PropertyLoaderType {
+extension PlistPropertyLoader: PropertyLoader {
     public func load() throws -> [String: Any] {
         let data = try loadDataFromBundle(bundle, withName: name, ofType: "plist")
         let plist = try PropertyListSerialization.propertyList(from: data, options: PropertyListSerialization.MutabilityOptions(), format: nil)
