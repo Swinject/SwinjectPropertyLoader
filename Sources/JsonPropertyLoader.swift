@@ -42,16 +42,10 @@ final public class JsonPropertyLoader {
     /// - Returns: the json string stripper of comments
     fileprivate func stringWithoutComments(_ str: String) -> String {
         let pattern = "(([\"'])(?:\\\\\\2|.)*?\\2)|(\\/\\/[^\\n\\r]*(?:[\\n\\r]+|$)|(\\/\\*(?:(?!\\*\\/).|[\\n\\r])*\\*\\/))"
-        let expression = try? NSRegularExpression(pattern: pattern, options: .anchorsMatchLines)
-        
-        let matches = expression!.matches(in: str, options: [], range: NSRange(location: 0, length: str.characters.count))
-        
-        guard !matches.isEmpty else {
-            return str
-        }
+        let expression = try! NSRegularExpression(pattern: pattern, options: .anchorsMatchLines)
+        let matches = expression.matches(in: str, options: [], range: NSRange(location: 0, length: str.characters.count))
         
         let ret = NSMutableString(string: str)
-        
         for match in matches.reversed() {
             let character = String(str[str.characters.index(str.startIndex, offsetBy: match.range.location)])
             if character != "\'" && character != "\"" {
