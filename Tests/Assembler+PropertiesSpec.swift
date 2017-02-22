@@ -22,7 +22,7 @@ class Assembler_PropertiesSpec: QuickSpec {
                         PlistPropertyLoader(bundle: Bundle(for: type(of: self).self), name: "first")
                     ])
                 
-                let cat = assembler.resolver.resolve(AnimalType.self)
+                let cat = assembler.resolver.resolve(Animal.self)
                 expect(cat).toNot(beNil())
                 expect(cat!.name) == "first"
             }
@@ -47,7 +47,7 @@ class Assembler_PropertiesSpec: QuickSpec {
                 
                 assembler.apply(assembly: PropertyAsssembly())
                 
-                let cat = assembler.resolver.resolve(AnimalType.self)
+                let cat = assembler.resolver.resolve(Animal.self)
                 expect(cat).toNot(beNil())
                 expect(cat!.name) == "first"
             }

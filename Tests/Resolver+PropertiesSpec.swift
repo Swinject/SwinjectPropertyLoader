@@ -1,5 +1,5 @@
 //
-//  ResolverType+PropertiesSpec.swift
+//  Resolver+PropertiesSpec.swift
 //  SwinjectPropertyLoader
 //
 //  Created by Yoichi Tagaya on 5/8/16.
@@ -12,7 +12,7 @@ import Nimble
 import Swinject
 import SwinjectPropertyLoader
 
-class ResolverType_PropertiesSpec: QuickSpec {
+class Resolver_PropertiesSpec: QuickSpec {
     override func spec() {
         var container: Container!
         beforeEach {

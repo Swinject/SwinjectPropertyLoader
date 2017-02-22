@@ -32,11 +32,11 @@ final public class PlistPropertyLoader {
 }
 
 // MARK: - PropertyLoadable
-extension PlistPropertyLoader: PropertyLoaderType {
-    public func load() throws -> [String:AnyObject] {
+extension PlistPropertyLoader: PropertyLoader {
+    public func load() throws -> [String: Any] {
         let data = try loadDataFromBundle(bundle, withName: name, ofType: "plist")
         let plist = try PropertyListSerialization.propertyList(from: data, options: PropertyListSerialization.MutabilityOptions(), format: nil)
-        guard let props = plist as? [String:AnyObject] else {
+        guard let props = plist as? [String: Any] else {
             throw PropertyLoaderError.invalidPlistFormat(bundle: bundle, name: name)
         }
         return props

@@ -42,17 +42,10 @@ final public class JsonPropertyLoader {
     /// - Returns: the json string stripper of comments
     fileprivate func stringWithoutComments(_ str: String) -> String {
         let pattern = "(([\"'])(?:\\\\\\2|.)*?\\2)|(\\/\\/[^\\n\\r]*(?:[\\n\\r]+|$)|(\\/\\*(?:(?!\\*\\/).|[\\n\\r])*\\*\\/))"
-        let expression = try? NSRegularExpression(pattern: pattern, options: .anchorsMatchLines)
-        
-        let matches = expression!.matches(in: str, options: NSRegularExpression.MatchingOptions(rawValue: 0),
-            range: NSRange(location: 0, length: str.characters.count))
-        
-        guard !matches.isEmpty else {
-            return str
-        }
+        let expression = try! NSRegularExpression(pattern: pattern, options: .anchorsMatchLines)
+        let matches = expression.matches(in: str, options: [], range: NSRange(location: 0, length: str.characters.count))
         
         let ret = NSMutableString(string: str)
-        
         for match in matches.reversed() {
             let character = String(str[str.characters.index(str.startIndex, offsetBy: match.range.location)])
             if character != "\'" && character != "\"" {
@@ -64,14 +57,14 @@ final public class JsonPropertyLoader {
 }
 
 // MARK: - PropertyLoadable
-extension JsonPropertyLoader: PropertyLoaderType {
-    public func load() throws -> [String : AnyObject] {
+extension JsonPropertyLoader: PropertyLoader {
+    public func load() throws -> [String: Any] {
         let contents = try loadStringFromBundle(bundle, withName: name, ofType: "json")
         let jsonWithoutComments = stringWithoutComments(contents)
         let data = jsonWithoutComments.data(using: String.Encoding.utf8)
         
-        let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions(rawValue: 0))
-        guard let props = json as? [String:AnyObject] else {
+        let json = try? JSONSerialization.jsonObject(with: data!, options: [])
+        guard let props = json as? [String: Any] else {
             throw PropertyLoaderError.invalidJSONFormat(bundle: bundle, name: name)
         }
         return props
