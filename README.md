@@ -6,7 +6,7 @@ SwinjectPropertyLoader
 [![CocoaPods Version](https://img.shields.io/cocoapods/v/SwinjectPropertyLoader.svg?style=flat)](http://cocoapods.org/pods/SwinjectPropertyLoader)
 [![License](https://img.shields.io/cocoapods/l/SwinjectPropertyLoader.svg?style=flat)](http://cocoapods.org/pods/SwinjectPropertyLoader)
 [![Platform](https://img.shields.io/cocoapods/p/SwinjectPropertyLoader.svg?style=flat)](http://cocoapods.org/pods/SwinjectPropertyLoader)
-[![Swift Version](https://img.shields.io/badge/Swift-2.2--3.0-F16D39.svg?style=flat)](https://developer.apple.com/swift)
+[![Swift Version](https://img.shields.io/badge/Swift-2.2--3.0.x-F16D39.svg?style=flat)](https://developer.apple.com/swift)
 
 
 SwinjectPropertyLoader is an extension of Swinject to load property values from resources that are bundled with your application or framework.
@@ -16,7 +16,7 @@ SwinjectPropertyLoader is an extension of Swinject to load property values from 
 - iOS 8.0+ / Mac OS X 10.10+ / watchOS 2.0+ / tvOS 9.0+
 - Swift 2.2 or 2.3
   - Xcode 7.0+
-- Swift 3
+- Swift 3.0.x
   - Xcode 8.0+
 - Carthage 0.18+ (if you use)
 - CocoaPods 1.1.1+ (if you use)
@@ -30,8 +30,8 @@ Swinject is available through [Carthage](https://github.com/Carthage/Carthage) o
 To install Swinject with Carthage, add the following line to your `Cartfile`.
 
 ```
-github "Swinject/Swinject" "2.0.0"
-github "Swinject/SwinjectPropertyLoader" "1.0.0"
+github "Swinject/Swinject" "~> 2.0.0"
+github "Swinject/SwinjectPropertyLoader" "~> 1.0.0"
 ```
 
 Then run `carthage update --no-use-binaries` command or just `carthage update`. For details of the installation and usage of Carthage, visit [its project page](https://github.com/Carthage/Carthage).
@@ -46,8 +46,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0' # or platform :osx, '10.10' if your target is OS X.
 use_frameworks!
 
-pod 'Swinject', '2.0.0'
-pod 'SwinjectPropertyLoader', '2.0.0'
+pod 'Swinject', '~> 2.0.0'
+pod 'SwinjectPropertyLoader', '~> 2.0.0'
 ```
 
 Then run `pod install` command. For details of the installation and usage of CocoaPods, visit [its official website](https://cocoapods.org).
