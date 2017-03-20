@@ -30,8 +30,8 @@ Swinject is available through [Carthage](https://github.com/Carthage/Carthage) o
 To install Swinject with Carthage, add the following line to your `Cartfile`.
 
 ```
-github "Swinject/Swinject" "~> 2.0.0"
-github "Swinject/SwinjectPropertyLoader" "~> 1.0.0"
+github "Swinject/Swinject" ~> 2.0.0
+github "Swinject/SwinjectPropertyLoader" ~> 1.0.0
 ```
 
 Then run `carthage update --no-use-binaries` command or just `carthage update`. For details of the installation and usage of Carthage, visit [its project page](https://github.com/Carthage/Carthage).
