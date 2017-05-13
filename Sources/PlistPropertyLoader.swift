@@ -12,7 +12,7 @@ import Foundation
 /// The PlistPropertyLoader will load properties from plist resources
 final public class PlistPropertyLoader {
     
-    /// the bundle where the resource exists (defualts to mainBundle)
+    /// the bundle where the resource exists (defaults to mainBundle)
     fileprivate let bundle: Bundle
     
     /// the name of the JSON resource. For example, if your resource is "properties.json" then this value will be set to "properties"
