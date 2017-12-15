@@ -22,7 +22,7 @@ final public class JsonPropertyLoader {
     /// Will create a JSON property loader
     ///
     /// - parameter bundle: the bundle where the resource exists (defaults to mainBundle)
-    /// - parameter name:   the name of the JSON resource. For example, if your resource is "properties.json" 
+    /// - parameter name:   the name of the JSON resource. For example, if your resource is "properties.json"
     ///                     then this value will be set to "properties"
     ///
     public init(bundle: Bundle? = Bundle.main, name: String) {
@@ -43,11 +43,11 @@ final public class JsonPropertyLoader {
     fileprivate func stringWithoutComments(_ str: String) -> String {
         let pattern = "(([\"'])(?:\\\\\\2|.)*?\\2)|(\\/\\/[^\\n\\r]*(?:[\\n\\r]+|$)|(\\/\\*(?:(?!\\*\\/).|[\\n\\r])*\\*\\/))"
         let expression = try! NSRegularExpression(pattern: pattern, options: .anchorsMatchLines)
-        let matches = expression.matches(in: str, options: [], range: NSRange(location: 0, length: str.characters.count))
+        let matches = expression.matches(in: str, options: [], range: NSRange(location: 0, length: str.count))
         
         let ret = NSMutableString(string: str)
         for match in matches.reversed() {
-            let character = String(str[str.characters.index(str.startIndex, offsetBy: match.range.location)])
+            let character = String(str[str.index(str.startIndex, offsetBy: match.range.location)])
             if character != "\'" && character != "\"" {
                 ret.replaceCharacters(in: match.range, with: "")
             }
@@ -71,3 +71,4 @@ extension JsonPropertyLoader: PropertyLoader {
         
     }
 }
+
