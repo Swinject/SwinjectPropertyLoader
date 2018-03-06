@@ -47,7 +47,7 @@ platform :ios, '8.0' # or platform :osx, '10.10' if your target is OS X.
 use_frameworks!
 
 pod 'Swinject', '~> 2.0.0'
-pod 'SwinjectPropertyLoader', '~> 2.0.0'
+pod 'SwinjectPropertyLoader', '~> 1.0.0'
 ```
 
 Then run `pod install` command. For details of the installation and usage of CocoaPods, visit [its official website](https://cocoapods.org).
