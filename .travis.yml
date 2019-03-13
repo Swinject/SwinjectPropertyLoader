@@ -15,7 +15,7 @@ env:
 ## The iOS 8.4 simulator is commented out because it does not start. It looks a problem of the simulator.
 ## Uncomment the following line after the simulator problem is fixed.
 #    - DESTINATION="OS=8.4,name=iPhone 5S" SCHEME="SwinjectPropertyLoader-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO" ACTION="test"
-    - DESTINATION="OS=11.4,name=iPhone XR" SCHEME="SwinjectPropertyLoader-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO" ACTION="test"
+    - DESTINATION="OS=11.4,name=iPhone X" SCHEME="SwinjectPropertyLoader-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="NO" ACTION="test"
     - DESTINATION="OS=12.0,name=iPhone XS Max" SCHEME="SwinjectPropertyLoader-iOS" SDK="$IOS_SDK" PLATFORM="iOS" POD_LINT="YES" ACTION="test"
     - DESTINATION="arch=x86_64" SCHEME="SwinjectPropertyLoader-OSX" SDK="$OSX_SDK" PLATFORM="Mac" POD_LINT="NO" ACTION="test" ACTION="test"
     - DESTINATION="OS=11.4,name=Apple TV" SCHEME="SwinjectPropertyLoader-tvOS" SDK="$TVOS_SDK" PLATFORM="tvOS" POD_LINT="NO" ACTION="test"
@@ -28,7 +28,8 @@ before_install:
 script:
   - set -o pipefail
   - xcodebuild -version
-  - open -b com.apple.iphonesimulator # Workaround https://github.com/travis-ci/travis-ci/issues/3040
+## The following command is commented out because fails immediately.
+#  - open -b com.apple.iphonesimulator # Workaround https://github.com/travis-ci/travis-ci/issues/3040
   - xcodebuild -project "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" 
     -configuration Release ONLY_ACTIVE_ARCH=NO $ACTION | xcpretty
   - if [ $POD_LINT == "YES" ]; then
