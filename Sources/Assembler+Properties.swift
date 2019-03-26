@@ -15,10 +15,10 @@ extension Assembler {
     /// - parameter propertyLoaders:    a list of property loaders to apply to the container
     /// - parameter container:          the baseline container
     ///
-    public convenience init(assemblies: [Assembly], propertyLoaders: [PropertyLoader], container: Container? = Container()) throws {
-        try self.init(assemblies: assemblies, container: container)
+    public convenience init(assemblies: [Assembly], propertyLoaders: [PropertyLoader], container: Container = Container()) throws {
+        self.init(assemblies, container: container)
         for propertyLoader in propertyLoaders {
-            try container!.applyPropertyLoader(propertyLoader)
+            try container.applyPropertyLoader(propertyLoader)
         }
     }
 
@@ -29,7 +29,7 @@ extension Assembler {
     /// - parameter propertyLoaders:    a list of property loaders to apply to the container
     ///
     public convenience init(assemblies: [Assembly], parentAssembler: Assembler?, propertyLoaders: [PropertyLoader]) throws {
-        try self.init(assemblies: assemblies, parentAssembler: parentAssembler)
+        self.init(assemblies, parent: parentAssembler)
         for propertyLoader in propertyLoaders {
             try self.resolver.applyPropertyLoader(propertyLoader)
         }
