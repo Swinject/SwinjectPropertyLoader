@@ -678,17 +678,17 @@
 			isa = PBXGroup;
 			children = (
 				98D563911CDB28CE00DECDC0 /* Quick.framework */,
-				98D563931CDB28CE00DECDC0 /* Quick-macOSTests.xctest */,
-				98D563951CDB28CE00DECDC0 /* QuickFocused-macOSTests.xctest */,
-				8FAB6A471E2C44CF005E52F1 /* QuickAfterSuite-macOSTests.xctest */,
+				98D563931CDB28CE00DECDC0 /* Quick - macOSTests.xctest */,
+				98D563951CDB28CE00DECDC0 /* QuickFocused - macOSTests.xctest */,
+				8FAB6A471E2C44CF005E52F1 /* QuickAfterSuite - macOSTests.xctest */,
 				98D563971CDB28CE00DECDC0 /* Quick.framework */,
-				98D563991CDB28CE00DECDC0 /* Quick-iOSTests.xctest */,
-				98D5639B1CDB28CE00DECDC0 /* QuickFocused-iOSTests.xctest */,
-				8FAB6A491E2C44CF005E52F1 /* QuickAfterSuite-iOSTests.xctest */,
+				98D563991CDB28CE00DECDC0 /* Quick - iOSTests.xctest */,
+				98D5639B1CDB28CE00DECDC0 /* QuickFocused - iOSTests.xctest */,
+				8FAB6A491E2C44CF005E52F1 /* QuickAfterSuite - iOSTests.xctest */,
 				98D5639D1CDB28CE00DECDC0 /* Quick.framework */,
-				98D5639F1CDB28CE00DECDC0 /* Quick-tvOSTests.xctest */,
-				98D563A11CDB28CE00DECDC0 /* QuickFocused-tvOSTests.xctest */,
-				8FAB6A4B1E2C44CF005E52F1 /* QuickAfterSuite-tvOSTests.xctest */,
+				98D5639F1CDB28CE00DECDC0 /* Quick - tvOSTests.xctest */,
+				98D563A11CDB28CE00DECDC0 /* QuickFocused - tvOSTests.xctest */,
+				8FAB6A4B1E2C44CF005E52F1 /* QuickAfterSuite - tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -908,6 +908,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 985903FC1CDB0AA700275E4A;
@@ -941,24 +942,24 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		8FAB6A471E2C44CF005E52F1 /* QuickAfterSuite-macOSTests.xctest */ = {
+		8FAB6A471E2C44CF005E52F1 /* QuickAfterSuite - macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "QuickAfterSuite-macOSTests.xctest";
+			path = "QuickAfterSuite - macOSTests.xctest";
 			remoteRef = 8FAB6A461E2C44CF005E52F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8FAB6A491E2C44CF005E52F1 /* QuickAfterSuite-iOSTests.xctest */ = {
+		8FAB6A491E2C44CF005E52F1 /* QuickAfterSuite - iOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "QuickAfterSuite-iOSTests.xctest";
+			path = "QuickAfterSuite - iOSTests.xctest";
 			remoteRef = 8FAB6A481E2C44CF005E52F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		8FAB6A4B1E2C44CF005E52F1 /* QuickAfterSuite-tvOSTests.xctest */ = {
+		8FAB6A4B1E2C44CF005E52F1 /* QuickAfterSuite - tvOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "QuickAfterSuite-tvOSTests.xctest";
+			path = "QuickAfterSuite - tvOSTests.xctest";
 			remoteRef = 8FAB6A4A1E2C44CF005E52F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1060,17 +1061,17 @@
 			remoteRef = 98D563901CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98D563931CDB28CE00DECDC0 /* Quick-macOSTests.xctest */ = {
+		98D563931CDB28CE00DECDC0 /* Quick - macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "Quick-macOSTests.xctest";
+			path = "Quick - macOSTests.xctest";
 			remoteRef = 98D563921CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98D563951CDB28CE00DECDC0 /* QuickFocused-macOSTests.xctest */ = {
+		98D563951CDB28CE00DECDC0 /* QuickFocused - macOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "QuickFocused-macOSTests.xctest";
+			path = "QuickFocused - macOSTests.xctest";
 			remoteRef = 98D563941CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1081,17 +1082,17 @@
 			remoteRef = 98D563961CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98D563991CDB28CE00DECDC0 /* Quick-iOSTests.xctest */ = {
+		98D563991CDB28CE00DECDC0 /* Quick - iOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "Quick-iOSTests.xctest";
+			path = "Quick - iOSTests.xctest";
 			remoteRef = 98D563981CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98D5639B1CDB28CE00DECDC0 /* QuickFocused-iOSTests.xctest */ = {
+		98D5639B1CDB28CE00DECDC0 /* QuickFocused - iOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "QuickFocused-iOSTests.xctest";
+			path = "QuickFocused - iOSTests.xctest";
 			remoteRef = 98D5639A1CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1102,17 +1103,17 @@
 			remoteRef = 98D5639C1CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98D5639F1CDB28CE00DECDC0 /* Quick-tvOSTests.xctest */ = {
+		98D5639F1CDB28CE00DECDC0 /* Quick - tvOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "Quick-tvOSTests.xctest";
+			path = "Quick - tvOSTests.xctest";
 			remoteRef = 98D5639E1CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		98D563A11CDB28CE00DECDC0 /* QuickFocused-tvOSTests.xctest */ = {
+		98D563A11CDB28CE00DECDC0 /* QuickFocused - tvOSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			path = "QuickFocused-tvOSTests.xctest";
+			path = "QuickFocused - tvOSTests.xctest";
 			remoteRef = 98D563A01CDB28CE00DECDC0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1363,7 +1364,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
@@ -1379,7 +1379,6 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Release;
@@ -1394,7 +1393,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1412,7 +1411,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1457,7 +1456,6 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1468,7 +1466,6 @@
 				INFOPLIST_FILE = Tests/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoaderTests";
 				PRODUCT_NAME = "$(PROJECT_NAME)Tests";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1484,7 +1481,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1499,7 +1495,6 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1535,7 +1530,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -1551,7 +1545,6 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.el-eleven.SwinjectPropertyLoader";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;
