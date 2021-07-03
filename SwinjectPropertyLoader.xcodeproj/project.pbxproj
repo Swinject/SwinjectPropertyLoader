@@ -54,9 +54,9 @@
 		983D00361CDF63E000D39731 /* second.plist in Resources */ = {isa = PBXBuildFile; fileRef = 983D00291CDF63E000D39731 /* second.plist */; };
 		983D00371CDF63E000D39731 /* second.plist in Resources */ = {isa = PBXBuildFile; fileRef = 983D00291CDF63E000D39731 /* second.plist */; };
 		983D00381CDF63E000D39731 /* second.plist in Resources */ = {isa = PBXBuildFile; fileRef = 983D00291CDF63E000D39731 /* second.plist */; };
-		983D00401CDF651600D39731 /* Assembler+PropertiesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D003F1CDF651600D39731 /* Assembler+PropertiesSpec.swift */; };
-		983D00411CDF651600D39731 /* Assembler+PropertiesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D003F1CDF651600D39731 /* Assembler+PropertiesSpec.swift */; };
-		983D00421CDF651600D39731 /* Assembler+PropertiesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D003F1CDF651600D39731 /* Assembler+PropertiesSpec.swift */; };
+		983D00401CDF651600D39731 /* Assembler+PropertiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D003F1CDF651600D39731 /* Assembler+PropertiesTests.swift */; };
+		983D00411CDF651600D39731 /* Assembler+PropertiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D003F1CDF651600D39731 /* Assembler+PropertiesTests.swift */; };
+		983D00421CDF651600D39731 /* Assembler+PropertiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D003F1CDF651600D39731 /* Assembler+PropertiesTests.swift */; };
 		983D005B1CDF664600D39731 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D005A1CDF664600D39731 /* Animal.swift */; };
 		983D005C1CDF664600D39731 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D005A1CDF664600D39731 /* Animal.swift */; };
 		983D005D1CDF664600D39731 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D005A1CDF664600D39731 /* Animal.swift */; };
@@ -379,7 +379,7 @@
 		983D00281CDF63E000D39731 /* second.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = second.json; sourceTree = "<group>"; };
 		983D00291CDF63E000D39731 /* second.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = second.plist; sourceTree = "<group>"; };
 		983D00391CDF640D00D39731 /* Assembler+Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembler+Properties.swift"; sourceTree = "<group>"; };
-		983D003F1CDF651600D39731 /* Assembler+PropertiesSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembler+PropertiesSpec.swift"; sourceTree = "<group>"; };
+		983D003F1CDF651600D39731 /* Assembler+PropertiesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembler+PropertiesTests.swift"; sourceTree = "<group>"; };
 		983D00491CDF65E400D39731 /* BasicAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAssembly.swift; sourceTree = "<group>"; };
 		983D005A1CDF664600D39731 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		983D005E1CDF67A900D39731 /* Resolver+PropertiesSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Resolver+PropertiesSpec.swift"; sourceTree = "<group>"; };
@@ -597,7 +597,7 @@
 				983D00241CDF63E000D39731 /* Resources */,
 				983D00431CDF65C300D39731 /* Fakes */,
 				983D005E1CDF67A900D39731 /* Resolver+PropertiesSpec.swift */,
-				983D003F1CDF651600D39731 /* Assembler+PropertiesSpec.swift */,
+				983D003F1CDF651600D39731 /* Assembler+PropertiesTests.swift */,
 				983D00141CDF63CA00D39731 /* JsonPropertyLoaderTests.swift */,
 				983D00151CDF63CA00D39731 /* PlistPropertyLoaderTests.swift */,
 				985904171CDB0AA700275E4A /* Info.plist */,
@@ -1252,7 +1252,7 @@
 				983D001E1CDF63CA00D39731 /* Properties.swift in Sources */,
 				983D005F1CDF67A900D39731 /* Resolver+PropertiesSpec.swift in Sources */,
 				983D001B1CDF63CA00D39731 /* PlistPropertyLoaderTests.swift in Sources */,
-				983D00401CDF651600D39731 /* Assembler+PropertiesSpec.swift in Sources */,
+				983D00401CDF651600D39731 /* Assembler+PropertiesTests.swift in Sources */,
 				983D00181CDF63CA00D39731 /* JsonPropertyLoaderTests.swift in Sources */,
 				983D005B1CDF664600D39731 /* Animal.swift in Sources */,
 			);
@@ -1279,7 +1279,7 @@
 				983D001F1CDF63CA00D39731 /* Properties.swift in Sources */,
 				983D00601CDF67A900D39731 /* Resolver+PropertiesSpec.swift in Sources */,
 				983D001C1CDF63CA00D39731 /* PlistPropertyLoaderTests.swift in Sources */,
-				983D00411CDF651600D39731 /* Assembler+PropertiesSpec.swift in Sources */,
+				983D00411CDF651600D39731 /* Assembler+PropertiesTests.swift in Sources */,
 				983D00191CDF63CA00D39731 /* JsonPropertyLoaderTests.swift in Sources */,
 				983D005C1CDF664600D39731 /* Animal.swift in Sources */,
 			);
@@ -1306,7 +1306,7 @@
 				983D00201CDF63CA00D39731 /* Properties.swift in Sources */,
 				983D00611CDF67A900D39731 /* Resolver+PropertiesSpec.swift in Sources */,
 				983D001D1CDF63CA00D39731 /* PlistPropertyLoaderTests.swift in Sources */,
-				983D00421CDF651600D39731 /* Assembler+PropertiesSpec.swift in Sources */,
+				983D00421CDF651600D39731 /* Assembler+PropertiesTests.swift in Sources */,
 				983D001A1CDF63CA00D39731 /* JsonPropertyLoaderTests.swift in Sources */,
 				983D005D1CDF664600D39731 /* Animal.swift in Sources */,
 			);
