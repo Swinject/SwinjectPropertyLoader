@@ -30,9 +30,9 @@
 		983D00111CDF63A000D39731 /* PropertyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFF1CDF63A000D39731 /* PropertyLoader.swift */; };
 		983D00121CDF63A000D39731 /* PropertyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFF1CDF63A000D39731 /* PropertyLoader.swift */; };
 		983D00131CDF63A000D39731 /* PropertyLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983DFFFF1CDF63A000D39731 /* PropertyLoader.swift */; };
-		983D00181CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00141CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift */; };
-		983D00191CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00141CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift */; };
-		983D001A1CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00141CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift */; };
+		983D00181CDF63CA00D39731 /* JsonPropertyLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00141CDF63CA00D39731 /* JsonPropertyLoaderTests.swift */; };
+		983D00191CDF63CA00D39731 /* JsonPropertyLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00141CDF63CA00D39731 /* JsonPropertyLoaderTests.swift */; };
+		983D001A1CDF63CA00D39731 /* JsonPropertyLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00141CDF63CA00D39731 /* JsonPropertyLoaderTests.swift */; };
 		983D001B1CDF63CA00D39731 /* PlistPropertyLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00151CDF63CA00D39731 /* PlistPropertyLoaderTests.swift */; };
 		983D001C1CDF63CA00D39731 /* PlistPropertyLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00151CDF63CA00D39731 /* PlistPropertyLoaderTests.swift */; };
 		983D001D1CDF63CA00D39731 /* PlistPropertyLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983D00151CDF63CA00D39731 /* PlistPropertyLoaderTests.swift */; };
@@ -370,7 +370,7 @@
 		8963F0DC225D33E50080B8B0 /* macOS-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "macOS-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
 		8963F0E3225D34210080B8B0 /* Extension.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Extension.xcconfig; sourceTree = "<group>"; };
 		8963F0E4225D342C0080B8B0 /* iOS-Extension.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Extension.xcconfig"; sourceTree = "<group>"; };
-		983D00141CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonPropertyLoaderSpec.swift; sourceTree = "<group>"; };
+		983D00141CDF63CA00D39731 /* JsonPropertyLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonPropertyLoaderTests.swift; sourceTree = "<group>"; };
 		983D00151CDF63CA00D39731 /* PlistPropertyLoaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistPropertyLoaderTests.swift; sourceTree = "<group>"; };
 		983D00161CDF63CA00D39731 /* Properties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
 		983D00251CDF63E000D39731 /* first.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = first.json; sourceTree = "<group>"; };
@@ -598,7 +598,7 @@
 				983D00431CDF65C300D39731 /* Fakes */,
 				983D005E1CDF67A900D39731 /* Resolver+PropertiesSpec.swift */,
 				983D003F1CDF651600D39731 /* Assembler+PropertiesSpec.swift */,
-				983D00141CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift */,
+				983D00141CDF63CA00D39731 /* JsonPropertyLoaderTests.swift */,
 				983D00151CDF63CA00D39731 /* PlistPropertyLoaderTests.swift */,
 				985904171CDB0AA700275E4A /* Info.plist */,
 			);
@@ -1253,7 +1253,7 @@
 				983D005F1CDF67A900D39731 /* Resolver+PropertiesSpec.swift in Sources */,
 				983D001B1CDF63CA00D39731 /* PlistPropertyLoaderTests.swift in Sources */,
 				983D00401CDF651600D39731 /* Assembler+PropertiesSpec.swift in Sources */,
-				983D00181CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift in Sources */,
+				983D00181CDF63CA00D39731 /* JsonPropertyLoaderTests.swift in Sources */,
 				983D005B1CDF664600D39731 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1280,7 +1280,7 @@
 				983D00601CDF67A900D39731 /* Resolver+PropertiesSpec.swift in Sources */,
 				983D001C1CDF63CA00D39731 /* PlistPropertyLoaderTests.swift in Sources */,
 				983D00411CDF651600D39731 /* Assembler+PropertiesSpec.swift in Sources */,
-				983D00191CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift in Sources */,
+				983D00191CDF63CA00D39731 /* JsonPropertyLoaderTests.swift in Sources */,
 				983D005C1CDF664600D39731 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1307,7 +1307,7 @@
 				983D00611CDF67A900D39731 /* Resolver+PropertiesSpec.swift in Sources */,
 				983D001D1CDF63CA00D39731 /* PlistPropertyLoaderTests.swift in Sources */,
 				983D00421CDF651600D39731 /* Assembler+PropertiesSpec.swift in Sources */,
-				983D001A1CDF63CA00D39731 /* JsonPropertyLoaderSpec.swift in Sources */,
+				983D001A1CDF63CA00D39731 /* JsonPropertyLoaderTests.swift in Sources */,
 				983D005D1CDF664600D39731 /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
